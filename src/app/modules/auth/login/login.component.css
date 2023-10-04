@@ -20,23 +20,23 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  margin-top: -50px;
 }
 .form img {
-  height: 20%;
+  height: 25%;
 }
 form {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
+}
+mat-form-field {
+  width: 60%;
 }
 button {
   background-color: #3056d3 !important;
   color: white !important;
   border-radius: 0 !important;
-}
-
-input,
-mat-label {
-  font-size: small !important;
 }
