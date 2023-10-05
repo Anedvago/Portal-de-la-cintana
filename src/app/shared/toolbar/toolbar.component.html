@@ -1,0 +1,56 @@
+<div class="container">
+  <img src="./assets/img/logo.jpg" alt="logo-cintana" />
+
+  <div class="container-buttons">
+    <!--   <button mat-button *ngFor="let btn of buttons" class="button-basic">
+      {{ btn.name | titlecase }}
+    </button> -->
+
+    <!-- <mat-tree [dataSource]="dataSource" [treeControl]="treeControl">
+      <mat-tree-node *matTreeNodeDef="let node" matTreeNodePadding>
+        <button mat-button>
+          {{ node.name | titlecase }}
+        </button>
+      </mat-tree-node>
+
+      <mat-tree-node
+        *matTreeNodeDef="let node; when: hasChild"
+        matTreeNodePadding
+      >
+        <button
+          mat-button
+          matTreeNodeToggle
+          [attr.aria-label]="'Toggle ' + node.name"
+          class="button-toggle"
+        >
+          <span class="content-button">
+            {{ node.name | titlecase }}
+          </span>
+        </button>
+      </mat-tree-node>
+    </mat-tree> -->
+    <mat-tree [dataSource]="buttons" [treeControl]="treeControl">
+      <mat-tree-node *matTreeNodeDef="let node" matTreeNodePadding>
+        <button mat-button>
+          {{ node.name | titlecase }}
+        </button>
+      </mat-tree-node>
+
+      <mat-tree-node
+        *matTreeNodeDef="let node; when: hasChild"
+        matTreeNodePadding
+      >
+        <button
+          mat-button
+          matTreeNodeToggle
+          [attr.aria-label]="'Toggle ' + node.name"
+          class="button-toggle"
+        >
+          <span class="content-button">
+            {{ node.name | titlecase }}
+          </span>
+        </button>
+      </mat-tree-node>
+    </mat-tree>
+  </div>
+</div>
