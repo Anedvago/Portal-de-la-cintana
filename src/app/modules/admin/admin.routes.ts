@@ -10,11 +10,12 @@ export const routes: Routes = [
         path: 'dashboard',
         component: DashboardComponent,
       },
-      /* {
+      {
         path: 'inventory',
         loadChildren: () =>
           import('../inventory/inventory.routes').then((m) => m.routes),
       },
+      /*
       {
         path: 'reservations',
         loadChildren: () =>
