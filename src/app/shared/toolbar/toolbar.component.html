@@ -2,8 +2,12 @@
   <img src="./assets/img/logo.jpg" alt="logo-cintana" />
 
   <div class="container-buttons">
-    <app-button-toolbar>Inicio</app-button-toolbar>
-    <app-button-toolbar-toggle>Inventario</app-button-toolbar-toggle>
+    <app-button-toolbar (click)="tabClicked(buttons[0])" [active]="true">
+      {{ buttons[0].name | titlecase }}
+    </app-button-toolbar>
+    <app-button-toolbar-toggle (click)="tabClicked(buttons[1])">
+      {{ buttons[1].name | titlecase }}
+    </app-button-toolbar-toggle>
     <app-button-toolbar-toggle>Reservaciones</app-button-toolbar-toggle>
     <app-button-toolbar>Checks</app-button-toolbar>
   </div>

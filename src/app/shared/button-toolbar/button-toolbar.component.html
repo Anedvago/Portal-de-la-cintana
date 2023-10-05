@@ -1,3 +1,3 @@
-<button mat-button>
+<button mat-button (click)="clicked()" [ngClass]="{ active: active }">
   <ng-content></ng-content>
 </button>
