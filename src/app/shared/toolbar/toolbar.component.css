@@ -14,15 +14,7 @@ img {
 .container-buttons {
   width: 100%;
 }
-button {
-  width: 100%;
-  display: flex !important;
-  justify-content: flex-start !important;
-  padding-left: 50px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  color: #637381 !important;
-}
+
 .button-active {
   background-color: aqua !important;
 }

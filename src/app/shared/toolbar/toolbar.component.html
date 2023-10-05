@@ -2,11 +2,17 @@
   <img src="./assets/img/logo.jpg" alt="logo-cintana" />
 
   <div class="container-buttons">
-    <!--   <button mat-button *ngFor="let btn of buttons" class="button-basic">
+    <app-button-toolbar>Inicio</app-button-toolbar>
+    <app-button-toolbar-toggle>Inventario</app-button-toolbar-toggle>
+    <app-button-toolbar-toggle>Reservaciones</app-button-toolbar-toggle>
+    <app-button-toolbar>Checks</app-button-toolbar>
+  </div>
+</div>
+<!--   <button mat-button *ngFor="let btn of buttons" class="button-basic">
       {{ btn.name | titlecase }}
     </button> -->
 
-    <!-- <mat-tree [dataSource]="dataSource" [treeControl]="treeControl">
+<!-- <mat-tree [dataSource]="dataSource" [treeControl]="treeControl">
       <mat-tree-node *matTreeNodeDef="let node" matTreeNodePadding>
         <button mat-button>
           {{ node.name | titlecase }}
@@ -29,7 +35,7 @@
         </button>
       </mat-tree-node>
     </mat-tree> -->
-    <!-- <mat-tree [dataSource]="buttons" [treeControl]="treeControl">
+<!-- <mat-tree [dataSource]="buttons" [treeControl]="treeControl">
       <mat-tree-node *matTreeNodeDef="let node" matTreeNodePadding>
         <button mat-button>
           {{ node.name | titlecase }}
@@ -52,5 +58,3 @@
         </button>
       </mat-tree-node>
     </mat-tree> -->
-  </div>
-</div>

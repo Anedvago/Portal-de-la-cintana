@@ -1,1 +1,11 @@
-<p>button-toolbar-toggle works!</p>
+<button mat-button (click)="clicked()">
+  <div class="content-button">
+    <ng-content></ng-content>
+    <span class="material-symbols-outlined"
+      >{{ isDropdownVisible ? 'keyboard_arrow_up' : 'keyboard_arrow_down' }}
+    </span>
+  </div>
+</button>
+<div *ngIf="isDropdownVisible">
+  <button mat-button>Holas</button>
+</div>
