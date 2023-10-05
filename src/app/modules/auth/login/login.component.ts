@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-import { MatButtonModule } from '@angular/material/button';
 import { Router } from '@angular/router';
 import { AuthService } from 'src/app/services/auth.service';
 import Swal from 'sweetalert2';
 import { FormsModule } from '@angular/forms';
+import { ButtonBlueComponent } from 'src/app/shared/button-blue/button-blue.component';
 
 @Component({
   selector: 'app-login',
@@ -15,7 +15,7 @@ import { FormsModule } from '@angular/forms';
     CommonModule,
     MatFormFieldModule,
     MatInputModule,
-    MatButtonModule,
+    ButtonBlueComponent,
     FormsModule,
   ],
   templateUrl: './login.component.html',

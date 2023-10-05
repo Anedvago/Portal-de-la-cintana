@@ -9,7 +9,7 @@
 }
 .banner {
   width: 70%;
-  height: 100VH;
+  height: 100vh;
   background-size: cover;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
@@ -36,8 +36,6 @@ form {
 mat-form-field {
   width: 60%;
 }
-button {
-  background-color: #3056d3 !important;
-  color: white !important;
-  border-radius: 0 !important;
+app-button-blue {
+  width: 25%;
 }
