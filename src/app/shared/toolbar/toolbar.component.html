@@ -2,10 +2,13 @@
   <img src="./assets/img/logo.jpg" alt="logo-cintana" />
 
   <div class="container-buttons">
-    <app-button-toolbar (click)="tabClicked(buttons[0])" [active]="true">
+    <app-button-toolbar (click)="tabClicked(0)" [active]="buttons[0].active">
       {{ buttons[0].name | titlecase }}
     </app-button-toolbar>
-    <app-button-toolbar-toggle (click)="tabClicked(buttons[1])">
+    <app-button-toolbar-toggle
+      (click)="tabClicked(1)"
+      [active]="buttons[1].active"
+    >
       {{ buttons[1].name | titlecase }}
     </app-button-toolbar-toggle>
     <app-button-toolbar-toggle>Reservaciones</app-button-toolbar-toggle>

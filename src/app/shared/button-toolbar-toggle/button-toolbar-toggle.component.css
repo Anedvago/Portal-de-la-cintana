@@ -6,6 +6,7 @@ button {
   padding-top: 30px;
   padding-bottom: 30px;
   color: #637381 !important;
+  border-radius: 0;
 }
 .content-button {
   display: flex;
@@ -15,4 +16,9 @@ button {
 }
 .hidden {
   visibility: hidden;
+}
+
+.active {
+  border-right: 5px solid #3056d3 !important;
+  background-color: #f4f7ff !important;
 }

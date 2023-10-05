@@ -33,7 +33,17 @@ export class ToolbarComponent {
 
   constructor(private router: Router) {}
 
-  public tabClicked(btn: any): void {
-    this.router.navigate([`/admin/${btn.route}`]);
+  public tabClicked(index: number): void {
+    this.router.navigate([`/admin/${this.buttons[index].route}`]);
+    const indexActive = this.findActive(this.buttons);
+    this.buttons[indexActive].active = false;
+    this.buttons[index].active = true;
+  }
+
+  public findActive(list: any[]): number {
+    const index = list.findIndex((elem) => {
+      return elem.active == true;
+    });
+    return index;
   }
 }

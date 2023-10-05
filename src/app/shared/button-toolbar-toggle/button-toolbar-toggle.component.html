@@ -1,11 +1,11 @@
-<button mat-button (click)="clicked()">
+<button mat-button (click)="clicked()" [ngClass]="{ active: active }">
   <div class="content-button">
     <ng-content></ng-content>
     <span class="material-symbols-outlined"
-      >{{ isDropdownVisible ? 'keyboard_arrow_up' : 'keyboard_arrow_down' }}
+      >{{ active ? 'keyboard_arrow_up' : 'keyboard_arrow_down' }}
     </span>
   </div>
 </button>
-<div *ngIf="isDropdownVisible">
+<div *ngIf="active" [ngClass]="{ active: active }">
   <button mat-button>Holas</button>
 </div>
